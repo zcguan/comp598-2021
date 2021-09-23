@@ -1,0 +1,1 @@
+There are tweets with duplicated content with different ids. Other tweets containing lowercase 'trump' or '@realDonaldTrump' are not counted too.
