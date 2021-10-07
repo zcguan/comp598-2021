@@ -1,6 +1,5 @@
 # comp598-2021
-Resources for the 2021 offering of COMP 598
-
+We're so glad that you're taking this class! Here are some resources for the 2021 offering of COMP 598. These will be important to completing the homeworks.
 
 # General submission instructions
 
@@ -36,7 +35,7 @@ In each assignment, we'll give you precise instructions of the files and folder 
 
 Make sure you have these elements installed in your computer:
 
-* Python 3
+* Python 3.6 or higher
 * `pip` - see instructions [here](https://packaging.python.org/tutorials/installing-packages/)
 
 Wait - what is all that?
