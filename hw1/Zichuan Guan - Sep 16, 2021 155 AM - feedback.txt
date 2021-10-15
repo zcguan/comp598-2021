@@ -1,0 +1,46 @@
+
+Guan-Zichuan
+
+Files submitted:
+dataset.tsv
+README.md
+results.tsv
+
+Additional files submitted:
+data
+
+>>>GRADING dataset.tsv [20pt]
++2 Value separated file
++3 Tab separated
+
+Header ['tweet_id', 'publish_date', 'content', 'trump_mention']
++1 Header row present
++2 Correct header
++1 Records present
++2 Valid delimiter
+Reported mentions: 108 / 4694
+Actual   mentions: 110 / 4692
++3 Correct Trump mention
++3 Trump present in all True mentions
++3 Correct number of records
+
+>>>GRADING results.tsv [5pt]
++1 Tab separated
+
+Header ['result', 'value']
++1 Correct header
+
+Result ['frac-trump-mentions', '0.022490628904623073']
++1 Valid entry
+Frac value: 0.022490628904623073
++2 Correct frac
+
+>>>GRADING README.md [5pt]
+README.md file found; TA evaluation for description:
++1 Attempt
++1 Correct
++1 Concise
+
+Yes, there are duplicate tweets, but why might this be?
+
+Score: 28
