@@ -1,4 +1,4 @@
-# Welcome to HW5! 
+# Welcome to HW6! 
 
 **Important instructions** 
 Please read these instructions before submitting your assignment. 
@@ -9,31 +9,48 @@ To avoid pain and discomfort, follow the steps below carefully:
 In this directory, you'll find another folder, `submission_template`.
 **ALL YOUR ANSWERS** must be inside the `submission_template` folder. 
 
-Note that HW5 has a mandatory `clean.py` and a `test_clean.py` file. They should be inside `submission_template` following the file structure below:
+HW6 has several files that must be submitted. They all should be inside `submission_template` following the file structure below:
 
 ```
 submission_template
 ├── src
-    ├── clean.py
-├── test
-    ├── test_clean.py
+    ├── collect.py
+    ├── compute_title_lengths.py
+    ├── collect_relationships.py
+├── sample1.json
+├── sample2.json
 ├── other folders are optional in this assignment
 ```
 
+`src` can also carry any other additional code files that you need to write.
 
 ## Your code
 
-`clean.py` must be successfully invoked with the following command:
+`collect.py` must be successfully invoked with the following command:
 
-`python clean.py -i <input_file> -o <output_file>`
+`python collect.py`
 
-The arguments for `-i` and `-o` are the full path locations for input and output files respectively.
+And it should produce the sample files (which should look like [this](https://gist.github.com/hannelita/eb06c75a7b98cc2e16cb8727039e4911) ). Make sure the produced files are also in the root of `submission_template`.
+
+`compute_title_lengths.py` must be successfully invoked with the following command:
+
+`python compute_title_lengths.py PATH_TO_SAMPLE_JSON_FILE`
+
+
+There are no named arguments, just one single argument with the full path for a sample JSON file. We will test this against the sample files you submit and against our own samples, so do not hardcode anything.
+
+`collect_relationships.py` must be successfully invoked with the following command:
+
+`python collect_relationships.py -c <config-file.json> -o <output_file.json>`
+
+You do not have to submit your config file nor the output file - for this question, we'll test your script against our configuration directly.
+
 
 If needed, you can have auxiliary code/scripts. Make sure everything goes under the `src` folder.
 
-**The example file is inside the `data/` folder.**
+**DO NOT MODIFY** the structure of the folders in this assignment.
 
-**DO NOT MODIFY** the fixture file names, nor the test file name. You can write as many methods as you need in the test file. You can also write other fixtures if you want. 
+
 
 ## Setting up the project
 
@@ -59,7 +76,11 @@ pip install -r requirements.txt
 
 ## Are you on the right track?
 
-In this assignment, you must write your own test cases! Follow the instructions on the PDF. In the `submission_template` folder, run:
+For each HW assignment, we'll provide you with a set of automated tests. They are located under the `test` folder. 
+For this assignment, do not edit the contents of it!
+
+These tests should give you some guidance during the process of solving the problems.
+In the `submission_template` folder, run:
 
 ```
 python -m unittest
@@ -67,7 +88,10 @@ python -m unittest
 
 and check the output.
 
-All your tests must pass!
+If you are on the right track, you should receive a nice message saying all check passed! 
+
+**ProTip** Make sure the tests succeed in each HW assignment.
+
 
 ## Other tips
 
