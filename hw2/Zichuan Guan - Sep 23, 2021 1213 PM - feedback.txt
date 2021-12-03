@@ -1,0 +1,21 @@
+Guan-Zichuan
+
+Files submitted:
+ip_address.txt
+
+Additional files submitted:
+197667-187846 - Zichuan Guan - Sep 23, 2021 1213 PM - feedback.txt
+URL provided:	52.15.82.188
+URL testing:	http://52.15.82.188:8008/comp598_hw2.txt
+
+Grading webserver [15pt]
+URL response:	200
+Webserver responsive +5
+URL accesible +10
+
+Grading MariaDB/MySQL [15pt]
+MariaDB accesible +15
+
+
+
+Score: 30
